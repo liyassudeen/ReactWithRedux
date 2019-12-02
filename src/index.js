@@ -1,13 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
 
-import reducer from "./task/todoList/store/reducer";
 import TodoList from "./task/todoList/todoList";
-import "./task/todoList/styles.scss";
-
-const store = createStore(reducer);
+import { store } from "./task/todoList/store";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(

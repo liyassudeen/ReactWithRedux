@@ -1,12 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-
-function addText(text) {
-  return { type: "ADD_TEXT", textInput: text };
-}
-function strikeOutText(e) {
-  return { type: "STRIKE_OUT_TEXT", event: e };
-}
+import { addText, strikeOutText } from "./action";
+import "./styles.scss";
 
 class TodoList extends React.Component {
   constructor(props) {
