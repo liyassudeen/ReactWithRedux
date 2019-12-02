@@ -5,7 +5,7 @@ import { createStore } from "redux";
 import reducer from "./store/reducer";
 import StrikeOut from "./StrikeOut";
 
-import "./styles.css";
+import "./styles.scss";
 
 const store = createStore(reducer);
 

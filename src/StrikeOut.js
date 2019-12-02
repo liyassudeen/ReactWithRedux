@@ -14,16 +14,17 @@ class StrikeOut extends React.Component {
     this.textInput = React.createRef();
   }
 
-  handleSubmit() {
+  handleSubmit = () => {
     this.props.addText(this.textInput);
-  }
+    this.textInput.current.value = "";
+  };
 
   render() {
     const list = this.props.listElement.map(item => (
       <li onClick={e => this.props.strikeOutText(e)}>{item}</li>
     ));
     return (
-      <>
+      <div className="container">
         <h1>Welcome to react with redux</h1>
         <div className="form-wrapper">
           <input
@@ -34,7 +35,7 @@ class StrikeOut extends React.Component {
           <input
             type="button"
             value="AddText"
-            onClick={() => this.handleSubmit}
+            onClick={() => this.handleSubmit()}
           />
         </div>
         <ul>{list}</ul>
@@ -45,7 +46,7 @@ class StrikeOut extends React.Component {
           out of
           <span className="total-list"> {this.props.listElement.length}</span>
         </div>
-      </>
+      </div>
     );
   }
 }
