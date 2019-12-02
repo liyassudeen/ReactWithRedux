@@ -1,0 +1,38 @@
+h1 {
+  color: violet;
+  text-align: center;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  input {
+    background: white;
+    border: 1px solid violet;
+    color: violet;
+    border-radius: 4px;
+    height: 20px;
+    &:focus {
+      outline: unset;
+    }
+  }
+  input:first-of-type {
+    margin-bottom: 8px;
+    &::placeholder {
+      font-style: italic;
+      color: violet;
+    }
+  }
+}
+.result-group {
+  color: violet;
+  .non-strike-list {
+    color: green;
+  }
+  .total-list {
+    color: blue;
+  }
+}
+li {
+  color: magenta;
+}
