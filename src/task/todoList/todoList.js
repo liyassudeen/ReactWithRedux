@@ -25,7 +25,7 @@ class TodoList extends React.Component {
     ));
     return (
       <div className="container">
-        <h1>Welcome to react with redux</h1>
+        <h1>Welcome to Todo List</h1>
         <div className="form-wrapper">
           <input
             type="text"
