@@ -8,7 +8,7 @@ function strikeOutText(e) {
   return { type: "STRIKE_OUT_TEXT", event: e };
 }
 
-class StrikeOut extends React.Component {
+class TodoList extends React.Component {
   constructor(props) {
     super(props);
     this.textInput = React.createRef();
@@ -69,4 +69,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(StrikeOut);
+)(TodoList);
