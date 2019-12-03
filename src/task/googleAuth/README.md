@@ -1,0 +1,1 @@
+Link to configure & get client id & client secret : https://developers.google.com/identity/sign-in/web/sign-in

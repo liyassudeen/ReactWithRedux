@@ -8,7 +8,6 @@ export default function reducer(state = initialState, action) {
   switch (action.type) {
     case "ADD_TEXT": {
       if (action.textInput.current.value != "") {
-        //this.textInput.current.value = '';
         return Object.assign({}, state, {
           listElement: [...state.listElement, action.textInput.current.value],
           nonStrikeOutCount: state.nonStrikeOutCount + 1
